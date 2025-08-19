@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:my_flynn_app/features/my_information/screen/my_information_screen.dart';
 import 'package:my_flynn_app/features/splash_screen/screen/splash_screen.dart';
 import 'package:my_flynn_app/features/user_profile/screen/user_profile_screen.dart';
 
@@ -18,6 +19,12 @@ class AppPages {
       page: () => UserProfileScreen(),
       binding: UserProfileBinding(),
       transition: Transition.fade,
+    ),
+    GetPage(
+      name: Routes.MYINFORMATION,
+      page: () => MyInformation(),
+      binding: MyInformationBinding(),
+      transition: Transition.rightToLeftWithFade,
     ),
   ];
 }

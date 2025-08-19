@@ -12,8 +12,7 @@ class SplashTextWidget extends StatelessWidget {
               .textTheme
               .displayLarge
               ?.copyWith(
-              color: Theme.of(context)
-                  .colorScheme
+              color: Theme.of(context).extension<AppColors>()!
                   .white)
       ),
     );

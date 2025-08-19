@@ -6,7 +6,8 @@ class SplashScreenController extends GetxController {
   /// wait for five seconds and move to next screen
   Future<void> waitFiveSeconds() async {
     await Future.delayed(Duration(seconds: 5)).then(
-      (value) => NavigationService.navigationService.off(Routes.USERPROFILE),
+      /// TODO: change it to user profile later
+      (value) => NavigationService.navigationService.off(Routes.MYINFORMATION),
     );
   }
 
